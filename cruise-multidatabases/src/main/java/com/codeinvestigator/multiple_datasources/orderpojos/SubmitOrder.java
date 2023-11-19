@@ -17,7 +17,7 @@ import static com.codeinvestigator.multiple_datasources.constants.CurrCodeConsta
 @Setter
 @RequiredArgsConstructor
 @Data
-@Table(name = "submit_order", schema ="cruise_order")
+@Table(name = "submit_order", schema = "cruise_trade")
 @Entity
 
 

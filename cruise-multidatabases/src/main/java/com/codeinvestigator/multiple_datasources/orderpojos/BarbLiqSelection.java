@@ -28,7 +28,7 @@ import java.util.Objects;
 @Setter
 @RequiredArgsConstructor
 @Data
-@Table(name = "barb_liq_selection", schema = "cruise_order")
+@Table(name = "barb_liq_selection", schema = "cruise_trade")
 @Entity
 
 

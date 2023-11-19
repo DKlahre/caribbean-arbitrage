@@ -3,7 +3,7 @@ import lombok.Data;
 import javax.persistence.*;
 
 @Data
-@Table
+@Table(name = "passengers", schema = "cruise_trade")
 @Entity
 public class Passengers {
 

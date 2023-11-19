@@ -13,7 +13,7 @@ import java.util.List;
 @NoArgsConstructor(force = true)
 @Data
 @Entity
-@Table(name = "country2", schema = "cruise_order")
+@Table(name = "country2", schema = "cruise_trade")
 public class Country {
 
     @Id

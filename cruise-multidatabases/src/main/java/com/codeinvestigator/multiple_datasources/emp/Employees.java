@@ -6,7 +6,7 @@ import javax.persistence.*;
 import javax.persistence.GenerationType;
 
 @Data
-@Table
+@Table(name = "employees", schema = "cruise_trade")
 @Entity
 public class Employees {
 

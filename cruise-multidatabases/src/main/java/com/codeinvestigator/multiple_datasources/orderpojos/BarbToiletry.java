@@ -10,7 +10,7 @@ import static com.codeinvestigator.multiple_datasources.constants.CurrCodeConsta
 @Setter
 @RequiredArgsConstructor
 @Data
-@Table(name = "barb_toiletry", schema = "cruise_order")
+@Table(name = "barb_toiletry", schema = "cruise_trade")
 @Entity
 public class BarbToiletry {
 
