@@ -7,7 +7,6 @@ import { Link, useParams } from 'react-router-dom';
 export default function HomePass() {
   const [passengers, setPassengers] = useState([]);
 
-  //const {id} = useParams();
 
   useEffect(() => {
    loadPassengers();

@@ -1,27 +1,11 @@
 package com.codeinvestigator.multiple_datasources.orderpojos;
 
-import static com.codeinvestigator.multiple_datasources.constants.CurrCodeConstants.Barbados_Conv;
 
-import com.codeinvestigator.multiple_datasources.orderpojos.repository.BarbLiqSelectionRepository;
-import com.codeinvestigator.multiple_datasources.orderpojos.repository.BarbadosOrderRepository;
-import com.codeinvestigator.multiple_datasources.orderpojos.service.BarbLiqSelectionService;
-import com.codeinvestigator.multiple_datasources.orderpojos.service.BarbLiqSelectionServiceImpl;
-import com.codeinvestigator.multiple_datasources.orderpojos.service.BarbadosOrderServiceImpl;
-import com.fasterxml.jackson.annotation.JsonInclude;
 import lombok.Data;
 import lombok.Getter;
 import lombok.RequiredArgsConstructor;
 import lombok.Setter;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.jca.context.SpringContextResourceAdapter;
-import org.springframework.orm.hibernate5.SpringSessionContext;
-import org.springframework.orm.hibernate5.SpringSessionSynchronization;
-
 import javax.persistence.*;
-import java.math.BigDecimal;
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Objects;
 
 
 @Getter

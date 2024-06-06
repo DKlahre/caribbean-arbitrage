@@ -1,14 +1,13 @@
 package com.codeinvestigator.multiple_datasources.controller;
-import com.codeinvestigator.multiple_datasources.exception.UserNotFoundException;
+
+
 import com.codeinvestigator.multiple_datasources.orderpojos.*;
-import com.codeinvestigator.multiple_datasources.orderpojos.repository.BarbadosOrderRepository;
 import com.codeinvestigator.multiple_datasources.orderpojos.service.*;
 import lombok.AllArgsConstructor;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
-
 import java.util.List;
 
 

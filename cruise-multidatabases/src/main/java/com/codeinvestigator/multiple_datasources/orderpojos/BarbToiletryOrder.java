@@ -1,11 +1,9 @@
 package com.codeinvestigator.multiple_datasources.orderpojos;
 
-
 import lombok.Data;
 import lombok.*;
 import javax.persistence.*;
 import java.math.BigDecimal;
-import static com.codeinvestigator.multiple_datasources.constants.CurrCodeConstants.Barbados_Conv;
 import static com.codeinvestigator.multiple_datasources.constants.CurrCodeConstants.Martinique_Conv;
 
 
@@ -55,7 +53,6 @@ public class BarbToiletryOrder {
     public void setQuantity(Integer quantity) {
         this.quantity = quantity;
     }
-
     public Double getItemCostUs() {
         return itemCostUs;
     }
@@ -69,7 +66,6 @@ public class BarbToiletryOrder {
     public void setPurchDate(String purchDate) {
         this.purchDate = purchDate;
     }
-
     public void setItemTotalCostUs(double itemTotalCostUs) {
         this.itemTotalCostUs = getItemCostUs() * getQuantity();
     }

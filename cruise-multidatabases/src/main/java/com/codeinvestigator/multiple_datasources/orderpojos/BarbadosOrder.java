@@ -1,18 +1,10 @@
 package com.codeinvestigator.multiple_datasources.orderpojos;
 
-import com.codeinvestigator.multiple_datasources.emp.Employees;
-import com.codeinvestigator.multiple_datasources.orderpojos.repository.BarbadosOrderRepository;
-import com.codeinvestigator.multiple_datasources.pass.Passengers;
+
 import lombok.Data;
 import lombok.*;
-import org.springframework.beans.factory.annotation.Autowired;
-
 import javax.persistence.*;
 import java.math.BigDecimal;
-import java.text.DecimalFormat;
-import java.util.ArrayList;
-import java.util.List;
-
 import static com.codeinvestigator.multiple_datasources.constants.CurrCodeConstants.Barbados_Conv;
 
 
