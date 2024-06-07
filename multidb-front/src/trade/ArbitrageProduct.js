@@ -127,24 +127,27 @@ export default function ArbitrageProduct() {
         }
     })
 
-    const onInputChange=(e)=>{   
-        setNewProvisioner({...newProvisioner,[e.target.name]: e.target.value});   
+    const onInputChange=(e)=>{          
+        setNewProvisioner({...newProvisioner,[e.target.name]: e.target.value});          
     };
 
     const onInputChange2=(e)=>{
         setNewProvisioner2({...newProvisioner2,[e.target.name]: e.target.value});
     };
 
-    const onSubmit= async(e)=>{
-                     
+    const onSubmit= async(e)=>{             
                          if(newProvisioner.provisionerName === ''){
                             alert("Enter 1st provisioner name");
-                         }
+                            window.location.reload();
+                           // navigate(`/arbitrageproduct/${prodId1}/${prodId2}/${countId1}/${countId2}`);
+                         } else {setNewProvisioner({...newProvisioner,[e.target.name]: e.target.value});  }
                          if(newProvisioner2.provisionerName === ''){
                             alert("Enter 2nd provisioner name");
+                            window.location.reload();
                          }
                          if(newProvisioner.productQuantity === ''){
                             alert("Enter product quantity(left column)")
+                            window.location.reload();
                          }
                           
         if(newProvisioner2.productQuantity <= newProvisioner.productQuantity){
@@ -298,6 +301,7 @@ export default function ArbitrageProduct() {
                             id="provNameInputID1"
                             style={{border: 'solid', borderColor: 'blue'}}
                             placeholder="Enter provisioner name"
+                            defaultValue={'hello'}
                             name="provisionerName"
                             value={newProvisioner.provisionerName}
                             onChange={ (e)=> onInputChange(e) }         
@@ -344,6 +348,7 @@ export default function ArbitrageProduct() {
                             name="productQuantity"
                             style={{border: 'solid', borderColor: 'blue'}}
                             maxLength={6}
+                            
                             value={newProvisioner.productQuantity}
                             onChange={(e)=>onInputChange(e)}
                         />
