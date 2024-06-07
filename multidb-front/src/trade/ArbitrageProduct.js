@@ -127,8 +127,8 @@ export default function ArbitrageProduct() {
         }
     })
 
-    const onInputChange=(e)=>{
-        setNewProvisioner({...newProvisioner,[e.target.name]: e.target.value});
+    const onInputChange=(e)=>{   
+        setNewProvisioner({...newProvisioner,[e.target.name]: e.target.value});   
     };
 
     const onInputChange2=(e)=>{
@@ -136,6 +136,17 @@ export default function ArbitrageProduct() {
     };
 
     const onSubmit= async(e)=>{
+                     
+                         if(newProvisioner.provisionerName === ''){
+                            alert("Enter 1st provisioner name");
+                         }
+                         if(newProvisioner2.provisionerName === ''){
+                            alert("Enter 2nd provisioner name");
+                         }
+                         if(newProvisioner.productQuantity === ''){
+                            alert("Enter product quantity(left column)")
+                         }
+                          
         if(newProvisioner2.productQuantity <= newProvisioner.productQuantity){
         e.preventDefault();
       const prov1 = await axios.post(`http://localhost:8080/country/${countId1}/product/${prodId1}`, newProvisioner);
@@ -284,10 +295,13 @@ export default function ArbitrageProduct() {
                         <input
                             type={"text"}
                             className="form-control"
+                            id="provNameInputID1"
+                            style={{border: 'solid', borderColor: 'blue'}}
                             placeholder="Enter provisioner name"
                             name="provisionerName"
                             value={newProvisioner.provisionerName}
-                            onChange={(e)=>onInputChange(e)}
+                            onChange={ (e)=> onInputChange(e) }         
+                            
                         />
                     </div>
 
@@ -328,6 +342,7 @@ export default function ArbitrageProduct() {
                             className="form-control"
                             placeholder="Enter product quantity"
                             name="productQuantity"
+                            style={{border: 'solid', borderColor: 'blue'}}
                             maxLength={6}
                             value={newProvisioner.productQuantity}
                             onChange={(e)=>onInputChange(e)}
@@ -411,10 +426,12 @@ export default function ArbitrageProduct() {
                             type={"text"}
                             className="form-control"
                             placeholder="Enter provisioner name"
+                            style={{border: 'solid', borderColor: 'blue'}}
                             name="provisionerName"
                             value={newProvisioner2.provisionerName}
                             onChange={(e)=>onInputChange2(e)}
                         />
+
                     </div>
 
                     <div className="mb-3">
@@ -451,8 +468,7 @@ export default function ArbitrageProduct() {
                         </label>
                         <input
                             type={"text"}
-                            className="form-control"
-                            placeholder="Enter product quantity"
+                            className="form-control"                           
                             name="productQuantity"
                             maxLength={6}
                             value={newProvisioner2.productQuantity = newProvisioner.productQuantity}
