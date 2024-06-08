@@ -2,6 +2,7 @@ import axios from 'axios'
 import React, {useEffect, useState } from 'react'
 import { Link, useNavigate, useParams} from 'react-router-dom'
 import "./../styles.css";
+import { Alert } from 'bootstrap';
 
 
 export default function ArbitrageProduct() {
@@ -22,16 +23,16 @@ export default function ArbitrageProduct() {
         setProduct(result.data);
     };
     const loadProduct2=async()=>{
-        const result=await axios.get(`http://localhost:8080/product/${prodId2}`);
-        setProduct2(result.data);
+        const result2=await axios.get(`http://localhost:8080/product/${prodId2}`);
+        setProduct2(result2.data);
     };
     const loadCountry=async()=>{
-        const result=await axios.get(`http://localhost:8080/country/${countId1}`);
-        setCountry(result.data);
+        const result3=await axios.get(`http://localhost:8080/country/${countId1}`);
+        setCountry(result3.data);
     };
     const loadCountry2=async()=>{
-        const result=await axios.get(`http://localhost:8080/country/${countId2}`);
-        setCountry2(result.data);
+        const result4=await axios.get(`http://localhost:8080/country/${countId2}`);
+        setCountry2(result4.data);
     };
 
 
@@ -81,7 +82,7 @@ export default function ArbitrageProduct() {
 
     const [newProvisioner, setNewProvisioner] = useState({
         id: "",
-        provisionerName: "",
+        provisionerName: "blank",
         countryOfBusiness: "",
         productQuantity: "",
         purchaseTotal: "0.0",
@@ -105,7 +106,7 @@ export default function ArbitrageProduct() {
 
     const [newProvisioner2, setNewProvisioner2] = useState({
         id: "",
-        provisionerName: "",
+        provisionerName: "blank",
         countryOfBusiness: "",
         productQuantity: "",
         purchaseTotal: "0.0",
@@ -136,17 +137,16 @@ export default function ArbitrageProduct() {
     };
 
     const onSubmit= async(e)=>{             
-                         if(newProvisioner.provisionerName === ''){
+                         if(newProvisioner.provisionerName === 'blank'){
                             alert("Enter 1st provisioner name");
                             window.location.reload();
-                           // navigate(`/arbitrageproduct/${prodId1}/${prodId2}/${countId1}/${countId2}`);
-                         } else {setNewProvisioner({...newProvisioner,[e.target.name]: e.target.value});  }
-                         if(newProvisioner2.provisionerName === ''){
+                         } 
+                         if(newProvisioner2.provisionerName === 'blank'){
                             alert("Enter 2nd provisioner name");
                             window.location.reload();
                          }
                          if(newProvisioner.productQuantity === ''){
-                            alert("Enter product quantity(left column)")
+                            alert("Enter product quantity")
                             window.location.reload();
                          }
                           
@@ -267,7 +267,6 @@ export default function ArbitrageProduct() {
         </div> 
 
 
-
         <div style = {{display: 'flex', justifyContent:'center', alignItems:'center', marginTop: '6vh'  }}>        
         <div style = {{width: '50vh', justifyContent:'center'}}><h4>Buy from the seller</h4></div>
         <div style = {{width: '50vh', justifyContent:'center'}}><h4>Sell to the buyer</h4></div>
@@ -295,18 +294,27 @@ export default function ArbitrageProduct() {
                         <label htmlFor="ProvisionerName" className="form-label">
                             Provisioner Name
                         </label>
-                        <input
-                            type={"text"}
-                            className="form-control"
-                            id="provNameInputID1"
-                            style={{border: 'solid', borderColor: 'blue'}}
-                            placeholder="Enter provisioner name"
-                            defaultValue={'hello'}
-                            name="provisionerName"
-                            value={newProvisioner.provisionerName}
-                            onChange={ (e)=> onInputChange(e) }         
-                            
-                        />
+
+
+                        <select   
+                       name="provisionerName"
+                       style={{border: 'solid', borderColor: 'blue'}}
+                       value={newProvisioner.provisionerName}
+                       onChange={(e)=>onInputChange(e)}>
+                        <option value="blank">Choose a trade type</option>
+                        <option value="Anguilla_Pathways">Anguilla Pathways</option>
+                        <option value="Anguilla_Trading">Anguilla Trading Co</option>
+                        <option value="Dominica_Trade">Dominica Trade Co</option>
+                        <option value="Halifax_Provisioning">Halifax Provisioning</option>
+                        <option value="Island_Provisioning">Island Provisioning</option>
+                        <option value="Kitts_Prov_Inc">Kitts Prov. Inc</option>
+                        <option value="Montserrat_Tradeup">Montserrat Tradeup</option>
+                        <option value="Republic_Provisioning">Republic Provisioning</option>
+                        <option value="Sembora_Trade">Sembora Trade Co</option>
+                        <option value="US_Virginantes">US Virginantes Prov</option>
+                        <option value="Vincent_Cielo">Vincent Cielo Prov</option>
+                        </select>
+
                     </div>
 
                     <div className="mb-3">
@@ -348,7 +356,6 @@ export default function ArbitrageProduct() {
                             name="productQuantity"
                             style={{border: 'solid', borderColor: 'blue'}}
                             maxLength={6}
-                            
                             value={newProvisioner.productQuantity}
                             onChange={(e)=>onInputChange(e)}
                         />
@@ -427,7 +434,27 @@ export default function ArbitrageProduct() {
                         <label htmlFor="ProvisionerName" className="form-label">
                             Provisioner Name
                         </label>
-                        <input
+
+                        <select   
+                       name="provisionerName"
+                       style={{border: 'solid', borderColor: 'blue'}}
+                       value={newProvisioner2.provisionerName}
+                       onChange={(e)=>onInputChange2(e)}>
+                        <option value="blank">Choose a trade type</option>
+                        <option value="Anguilla_Pathways">Anguilla Pathways</option>
+                        <option value="Anguilla_Trading">Anguilla Trading Co</option>
+                        <option value="Dominica_Trade">Dominica Trade Co</option>
+                        <option value="Halifax_Provisioning">Halifax Provisioning</option>
+                        <option value="Island_Provisioning">Island Provisioning</option>
+                        <option value="Kitts_Prov_Inc">Kitts Prov. Inc</option>
+                        <option value="Montserrat_Tradeup">Montserrat Tradeup</option>
+                        <option value="Republic_Provisioning">Republic Provisioning</option>
+                        <option value="Sembora_Trade">Sembora Trade Co</option>
+                        <option value="US_Virginantes">US Virginantes Prov</option>
+                        <option value="Vincent_Cielo">Vincent Cielo Prov</option>
+                        </select>
+
+                        {/* <input
                             type={"text"}
                             className="form-control"
                             placeholder="Enter provisioner name"
@@ -435,7 +462,7 @@ export default function ArbitrageProduct() {
                             name="provisionerName"
                             value={newProvisioner2.provisionerName}
                             onChange={(e)=>onInputChange2(e)}
-                        />
+                        /> */}
 
                     </div>
 
