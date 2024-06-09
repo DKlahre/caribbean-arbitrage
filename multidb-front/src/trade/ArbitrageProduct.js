@@ -454,15 +454,6 @@ export default function ArbitrageProduct() {
                         <option value="Vincent_Cielo">Vincent Cielo Prov</option>
                         </select>
 
-                        {/* <input
-                            type={"text"}
-                            className="form-control"
-                            placeholder="Enter provisioner name"
-                            style={{border: 'solid', borderColor: 'blue'}}
-                            name="provisionerName"
-                            value={newProvisioner2.provisionerName}
-                            onChange={(e)=>onInputChange2(e)}
-                        /> */}
 
                     </div>
 
