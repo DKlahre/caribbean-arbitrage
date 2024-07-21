@@ -6,7 +6,7 @@ profit margins by taking advantage of supply and demand through geographical arb
 <H4>The app allows the purser to check inventory and do onboard business transactions before</br>
 reaching the physical point of sale. In the same way, purchasing ship supplies can be done</br>
 to take care of the needs of the passengers. Sales tax and currency conversions are automa-</br>
-tically calculated between a range of 6 carribbean currencies.</br></H4>
+tically calculated between a range of 6 carribbean currencies.</H4>
 
 <H4>
 <i>Java and react build:</i></br>
@@ -24,6 +24,6 @@ react-bootstrap: 2.9.1</br>
 react-dom: 18.2.0</br>
 react-router-dom: 6.18.0</br>
 react-scripts: 5.0.1</br>
-web-vitals: 3.5.0</br></H4>
+web-vitals: 3.5.0</H4>
 
 
