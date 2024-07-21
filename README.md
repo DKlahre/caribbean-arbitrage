@@ -15,7 +15,6 @@ mysql - java:8.0.32
 gradle - 6.0
 mysql connector - java:8.0.32
 
-React:
 react: 18.2.0
 axios: 1.6.1
 bootstrap: 5.3.2
