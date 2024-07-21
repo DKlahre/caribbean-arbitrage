@@ -9,4 +9,7 @@ done to insure a comfortable trip for the passengers. Sales tax and currency con
 are automatically calculated between a range of 6 carribbean currencies.
 
 Build Specs:
+Java Version: 17.0.6
+Java runtime version: 17.0.6+10-LTS
+
 
