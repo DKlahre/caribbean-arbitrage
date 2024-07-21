@@ -1,12 +1,12 @@
-<H4>The traditional business model of cruise ships is to ferry tourists between destinations.
-But the trading of goods between island nations has been an untapped business option until
-now. The Cruise Ship Arbitrage App allows cruise ships to buy and sell products at steep
-profit margins by taking advantage of supply and demand through geographical arbitrage.</H4>
+<H4>The traditional business model of cruise ships is to ferry tourists between destinations.</br>
+But the trading of goods between island nations has been an untapped business option until</br>
+now. The Cruise Ship Arbitrage App allows cruise ships to buy and sell products at steep</br>
+profit margins by taking advantage of supply and demand through geographical arbitrage.</br></H4>
 
-<H4>The app allows the purser to check inventory and do onboard business transactions before
-reaching the physical point of sale. In the same way, purchasing ship supplies can be
-done to take care of the needs of the passengers. Sales tax and currency conversions
-are automatically calculated between a range of 6 carribbean currencies.</H4>
+<H4>The app allows the purser to check inventory and do onboard business transactions before</br>
+reaching the physical point of sale. In the same way, purchasing ship supplies can be</br>
+done to take care of the needs of the passengers. Sales tax and currency conversions</br>
+are automatically calculated between a range of 6 carribbean currencies.</br></H4>
 
 <H4>
 <i>Java and react build:</i></br>
