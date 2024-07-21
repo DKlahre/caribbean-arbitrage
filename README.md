@@ -5,7 +5,8 @@ profit margins by taking advantage of supply and demand through geographical arb
 
 The app allows the purser to check inventory and do onboard business transactions before
 reaching the physical point of sale. In the same way, purchasing ship supplies can be
-done to insure a comfortable trip for the passengers.
+done to insure a comfortable trip for the passengers. Sales tax and currency conversions
+are automatically calculated between a range of 6 carribbean currencies.
 
 Build Specs:
 
