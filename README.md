@@ -4,9 +4,9 @@ until now. The Cruise Ship Arbitrage App allows cruise ships to buy and sell pro
 profit margins by taking advantage of supply and demand through geographical arbitrage.</br></H4>
 
 <H4>The app allows the purser to check inventory and do onboard business transactions before</br>
-reaching the physical point of sale. In the same way, purchasing ship supplies can be</br>
-done to take care of the needs of the passengers. Sales tax and currency conversions</br>
-are automatically calculated between a range of 6 carribbean currencies.</br></H4>
+reaching the physical point of sale. In the same way, purchasing ship supplies can be done</br>
+to take care of the needs of the passengers. Sales tax and currency conversions are automatically</br>
+calculated between a range of 6 carribbean currencies.</br></H4>
 
 <H4>
 <i>Java and react build:</i></br>
