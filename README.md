@@ -1,3 +1,6 @@
+<H4>Link to website showing code in action:</br>
+www.CruiseShipArbitrage.com</H4>
+
 <H4>The traditional business model of cruise ships is to ferry tourists between destinations. But</br>
 the trading of goods between island nations has been an untapped business alternative until</br>
 now. The Cruise Ship Arbitrage App allows cruise ships to buy and sell products at steep</br>
