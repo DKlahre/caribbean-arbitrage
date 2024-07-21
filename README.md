@@ -1,6 +1,6 @@
 <H4>The traditional business model of cruise ships is to ferry tourists between destinations.</br>
-But the trading of goods between island nations has been an untapped business option until</br>
-now. The Cruise Ship Arbitrage App allows cruise ships to buy and sell products at steep</br>
+But the trading of goods between island nations has been an untapped business alternative</br>
+until now. The Cruise Ship Arbitrage App allows cruise ships to buy and sell products at steep</br>
 profit margins by taking advantage of supply and demand through geographical arbitrage.</br></H4>
 
 <H4>The app allows the purser to check inventory and do onboard business transactions before</br>
